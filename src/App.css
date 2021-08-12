@@ -2,15 +2,10 @@ body {
   background-image: url("./img/pig.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+  background-position: center;
   background-size: contain;
   margin: 1rem;
   font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
-}
-
-h1 {
-  font-size: 3rem;
 }
 
 button {
@@ -20,8 +15,16 @@ button {
 }
 
 footer {
-  padding: 2rem;
-  font-size: 0.75em;
+  padding: 1rem;
+  font-size: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+h2 {
+  
+  text-align: center;
 }
 
 .userInput {
@@ -33,10 +36,8 @@ footer {
 }
 
 .inputArea {
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 650px) {
