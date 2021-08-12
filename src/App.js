@@ -82,7 +82,6 @@ class App extends Component{
             if (vowelsArray[0] === 'u' && letterBeforeVowel === 'q') {
                 // vowel is a u. look at the letter before it to see if it's a "qu" syllable
                 let indexOfNextVowel = currentWord.indexOf(vowelsArray[1])
-
                 front = currentWord.substring(0,indexOfNextVowel)
                 back = currentWord.substring(indexOfNextVowel)
             } else {
@@ -97,7 +96,6 @@ class App extends Component{
       // ACTION ITEM: change the value of currentWord to the name of whatever variable you made containing your Pig Latin'd word
       return translatedWord
     })
-
 
     // joining the array back to a string of translated words
     // no need to change this variable
@@ -134,9 +132,9 @@ class App extends Component{
   render(){
     return(
       <>
-        <h1>Pig Latin Translator</h1>
+      <h2>{this.state.phraseTranslated}</h2>
         <div className="inputArea">
-        <p>{this.state.phraseTranslated}</p>
+          
           {/* user input field - every DOM event that happens in the input will call the handleChange method and update state */}
           <input
             type="text"
@@ -148,7 +146,8 @@ class App extends Component{
           {/* button that called the setUpPreventDefault method which calls the myPigLatinCodeHere method */}
           <button onClick={this.setUpPreventDefault}>Submit</button>
           <button onClick={this.restartGame}>Clear</button>
-          <footer>Coded by Lauralyn and Jared. Background provided by dak</footer>
+          
+          <footer>Coded by Lauralyn and Jared. Image provided by dak</footer>
         </div>
         
       </>
