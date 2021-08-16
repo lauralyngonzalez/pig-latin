@@ -8,10 +8,10 @@ class App extends Component{
     this.state = {
       // "phrase" is the text entered by the user - right now there are test words hard coded to make the process of testing your code faster and easier
       // ACTION ITEM: when you are ready for your full user experience, delete the test words so phrase is assigned an empty string
-      phrase: "Translate your sentence into Pig Latin here",
+      phrase: "Translate your sentence into Pig Latin!",
       // alphayay oughthray ummyyay uealsqay eenquay yfray
       // "phraseTranslated" is what the user will see appear on the page as Pig Latin, it starts as the preset message and updates when your user clicks the "submit" button
-      phraseTranslated: "This is where your translated sentence will appear."
+      phraseTranslated: "Pig Latin Translator"
     }
   }
 
@@ -111,8 +111,8 @@ class App extends Component{
     // this method restarts the game by setting the original state
     // ACTION ITEM: when you are ready for your full user experience, delete the test words in phrase so that is assigned an empty string
     this.setState({
-      phrase: "Translate your sentence into Pig Latin here",
-      phraseTranslated: "This is where your translated sentence will appear."
+      phrase: "",
+      phraseTranslated: "Pig Latin Translator"
     })
   }
 
@@ -147,7 +147,7 @@ class App extends Component{
           <button onClick={this.setUpPreventDefault}>Submit</button>
           <button onClick={this.restartGame}>Clear</button>
           
-          <footer>Coded by Lauralyn and Jared. Image provided by dak</footer>
+          <footer>Coded by Lauralyn and Jared</footer>
         </div>
         
       </>
